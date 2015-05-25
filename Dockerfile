@@ -5,7 +5,7 @@ RUN apt-get update && \
     mkdir /root/HttpServer && \
     cd /root/HttpServer && \
     echo 'python -m SimpleHTTPServer 80' > /etc/bash.bashrc && \
-    apt-get remove -y --auto-remove wget curl net-tools tar git nano dialog && \
+#    apt-get remove -y --auto-remove wget curl net-tools tar git nano dialog && \
     apt-get clean
 
 EXPOSE 80
